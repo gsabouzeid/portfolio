@@ -1,0 +1,19 @@
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 100%;
+}
+
+body {
+  background-color: #07232e;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}

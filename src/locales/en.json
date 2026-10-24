@@ -1,0 +1,32 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "skills": "Skills",
+    "toggleNav": "Toggle Navigation"
+  },
+  "footer": {
+    "createdAndMaintained": "Created and Maintained by Garrett Abou-Zeid",
+    "copyrightNotice": "© Garrett Abou-Zeid. All rights reserved.",
+    "emailScreenReader": "Email me",
+    "githubScreenReader": "Vist my Github page",
+    "linkedinScreenReader": "Visit my LinkedIn page"
+  },
+  "skills": {
+    "languages": "Languages",
+    "frameworks": "Frameworks",
+    "misc": "Misc.",
+    "logoText": {
+      "js": "JavaScript Logo",
+      "ts": "TypeScript Logo",
+      "html": "HTML Logo",
+      "css": "CSS Logo",
+      "python": "Python Logo",
+      "react": "React Logo",
+      "jest": "Jest Logo",
+      "git": "Git Logo",
+      "aws": "AWS Logo"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.mainSection {
+  padding: 25px;
+}
