@@ -16,6 +16,7 @@
   "skills": {
     "languages": "Languages",
     "frameworks": "Frameworks",
+    "tools": "Tools",
     "misc": "Misc.",
     "logoText": {
       "js": "JavaScript Logo",
@@ -26,7 +27,13 @@
       "react": "React Logo",
       "jest": "Jest Logo",
       "git": "Git Logo",
-      "aws": "AWS Logo"
+      "aws": "AWS Logo",
+      "snyk": "Snyk Logo",
+      "datadog": "Datadog Logo",
+      "selenium": "Selenium Logo",
+      "cypress": "Cypress Logo",
+      "playwright": "Playwright Logo",
+      "kiro": "Kiro Logo"
     }
   }
 }
