@@ -13,7 +13,10 @@ const Skills = () => {
 
   return (
     <div className="skillsContainer">
-      <div className="categoryContainer">
+      <div
+        className="categoryContainer"
+        style={{ "--i": 0 } as React.CSSProperties}
+      >
         <h2 className="skillHeading">{t("skills.languages")}</h2>
         <div className="skillPillContainer">
           {SKILLS.languages.map((lan) => (
@@ -21,7 +24,10 @@ const Skills = () => {
           ))}
         </div>
       </div>
-      <div className="categoryContainer">
+      <div
+        className="categoryContainer"
+        style={{ "--i": 1 } as React.CSSProperties}
+      >
         <h2 className="skillHeading">{t("skills.frameworks")}</h2>
         <div className="skillPillContainer">
           {SKILLS.frameworks.map((fw) => (
@@ -29,7 +35,10 @@ const Skills = () => {
           ))}
         </div>
       </div>
-      <div className="categoryContainer">
+      <div
+        className="categoryContainer"
+        style={{ "--i": 2 } as React.CSSProperties}
+      >
         <h2 className="skillHeading">{t("skills.tools")}</h2>
         <div className="skillPillContainer">
           {SKILLS.tools.map((tool) => (
@@ -37,7 +46,10 @@ const Skills = () => {
           ))}
         </div>
       </div>
-      <div className="categoryContainer">
+      <div
+        className="categoryContainer"
+        style={{ "--i": 3 } as React.CSSProperties}
+      >
         <h2 className="skillHeading">{t("skills.misc")}</h2>
         <div className="skillPillContainer">
           {SKILLS.misc.map((m) => (
