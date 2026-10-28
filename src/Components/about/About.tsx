@@ -26,7 +26,9 @@ const About = () => {
           I graduated from the University of Minnesota Twin Cities in Spring
           2023 with a Bachelor of Science degree in Computer Science. I have
           been working professionally as a Frontend Engineer and have developed
-          proficient skills in React.js, JavaScript, CSS, and much more.
+          proficient skills in React.js, JavaScript, CSS, and much more. As well
+          as developed expertise in Resposive Web Design, User Interface Design,
+          and User Experience.
         </p>
       </div>
       <div className="aboutItem boulderingText" data-aos="fade-right">
