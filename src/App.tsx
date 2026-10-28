@@ -1,3 +1,5 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { useCallback, useEffect, useState } from "react";
 import { HashRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
@@ -13,6 +15,12 @@ import { ROUTES } from "./constants";
 
 function App() {
   const [toggleNav, setToggleNav] = useState(false);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
 
   // Close mobile nav if screen size expands
   useEffect(() => {
