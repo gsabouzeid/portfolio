@@ -1,0 +1,31 @@
+.aboutPage {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .aboutPage {
+    grid-template-columns: auto;
+  }
+  .boulderingText {
+    order: 1;
+  }
+}
+
+.aboutItem {
+  padding: 10px;
+}
+
+.aboutImage,
+.boulderingImage {
+  border-radius: 50px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  box-shadow: 10px 10px 5px black;
+}
+
+.portraitImage {
+  place-self: center;
+}
