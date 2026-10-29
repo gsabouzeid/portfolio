@@ -1,7 +1,9 @@
 .aboutPage {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
+  gap: 50px;
+  align-items: center;
+  justify-items: center;
 }
 
 @media (max-width: 768px) {
@@ -13,8 +15,22 @@
   }
 }
 
-.aboutItem {
-  padding: 10px;
+.coloredText {
+  color: #2495c2;
+}
+
+.aboutContainer {
+  border-radius: 50px;
+  padding: 40px;
+}
+
+.aboutContainer > p {
+  font-size: 20px;
+}
+
+.aboutHeading {
+  font-size: 40px;
+  text-align: center;
 }
 
 .aboutImage,
@@ -24,8 +40,4 @@
   height: auto;
   display: block;
   box-shadow: 10px 10px 5px black;
-}
-
-.portraitImage {
-  place-self: center;
 }

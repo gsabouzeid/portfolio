@@ -5,7 +5,7 @@ import "./styles.css";
 const About = () => {
   return (
     <div className="aboutPage">
-      <div className="aboutItem portraitImage" data-aos="fade-right">
+      <div className="aboutItem" data-aos="fade-right">
         <img
           src={aboutImage}
           width={500}
@@ -14,35 +14,71 @@ const About = () => {
           className="aboutImage"
         />
       </div>
+      <div className="aboutContainer" data-aos="fade-left">
+        <h2 className="aboutHeading">
+          Who am <span className="coloredText">I</span>?
+        </h2>
+        <p>
+          My name is <span className="coloredText">Garrett Abou-Zeid</span>, I
+          am from the greater Twin Cities area in Minnesota. I grew interest in
+          software development when I watched my mom develop mobile apps. I took
+          my first programming class my senior year of high school and was
+          instantly hooked.
+        </p>
+        <p>
+          I graduated from the{" "}
+          <span className="coloredText">
+            University of Minnesota Twin Cities
+          </span>{" "}
+          in Spring 2023 with a Bachelor of Science degree in{" "}
+          <span className="coloredText">Computer Science</span>. I have been
+          working professionally as a{" "}
+          <span className="coloredText">Frontend Engineer</span> and have
+          developed proficient skills in:
+          <ul className="coloredText">
+            <li>React.js</li>
+            <li>JavaScript</li>
+            <li>CSS</li>
+          </ul>
+          As well as developed expertise in:
+          <ul className="coloredText">
+            <li>Responsive Web Design</li>
+            <li>User Interface Design</li>
+            <li>User Experience</li>
+          </ul>
+        </p>
+      </div>
+      <div className="aboutContainer boulderingText" data-aos="fade-right">
+        <h2 className="aboutHeading">In my freetime...</h2>
+        <p>
+          My main form of physical activity is{" "}
+          <span className="coloredText">bouldering</span>:
+          <ul>
+            <li>Climb in the V4 to V6 range</li>
+            <li>Participated in a community climbing competition</li>
+          </ul>
+        </p>
+        <p>
+          Team up with my friends in a{" "}
+          <span className="coloredText">bowling</span> league:
+          <ul>
+            <li>High game of 276 pins bowled (7 strikes in a row)</li>
+            <li>Participated in a community climbing competition</li>
+          </ul>
+        </p>
+        <p>
+          Participate in <span className="coloredText">endurance events</span>:
+          <ul>
+            <li>Tough Mudder 15k</li>
+            <li>Sprint Triathlon</li>
+          </ul>
+        </p>
+      </div>
       <div className="aboutItem" data-aos="fade-left">
-        <p>Who am I?</p>
-        <p>
-          My name is Garrett Abou-Zeid, I am from the greater Twin Cities area
-          in Minnesota. I grew interest in software development when I watched
-          my mom develop mobile apps. I took my first programming class my
-          senior year of high school and was instantly hooked.
-        </p>
-        <p>
-          I graduated from the University of Minnesota Twin Cities in Spring
-          2023 with a Bachelor of Science degree in Computer Science. I have
-          been working professionally as a Frontend Engineer and have developed
-          proficient skills in React.js, JavaScript, CSS, and much more. As well
-          as developed expertise in Responsive Web Design, User Interface
-          Design, and User Experience.
-        </p>
-      </div>
-      <div className="aboutItem boulderingText" data-aos="fade-right">
-        <p>In my freetime...</p>
-        <p>Bouldering (Climb in the V4 to V6 range)</p>
-        <p>Bowling (Highest game I scored is 276)</p>
-        <p>Endurance Events (Have done a tough mudder & sprint triathlon)</p>
-      </div>
-      <div className="aboutIte boulderingImage" data-aos="fade-left">
         <img
           src={boulderingImage}
           alt="Picture of Garrett"
           className="boulderingImage"
-          loading="lazy"
         />
       </div>
     </div>
