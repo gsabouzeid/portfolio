@@ -63,7 +63,6 @@ const About = () => {
           <span className="coloredText">bowling</span> league:
           <ul>
             <li>High game of 276 pins bowled (7 strikes in a row)</li>
-            <li>Participated in a community climbing competition</li>
           </ul>
         </p>
         <p>
@@ -77,7 +76,7 @@ const About = () => {
       <div className="aboutItem" data-aos="fade-left">
         <img
           src={boulderingImage}
-          alt="Picture of Garrett"
+          alt="Picture of Garrett Climbing"
           className="boulderingImage"
         />
       </div>
