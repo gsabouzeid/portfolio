@@ -65,8 +65,15 @@
     margin: 0;
     font: inherit;
     cursor: pointer;
-    outline: inherit;
     color: white;
+  }
+
+  .navItemsButton:hover {
+    color: #2fc4ff;
+  }
+
+  .navItemsButton:active {
+    color: #82dcff;
   }
 }
 
