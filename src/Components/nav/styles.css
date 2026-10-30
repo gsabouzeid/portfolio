@@ -38,6 +38,10 @@
   transition: all 0.3s ease-out 0s;
 }
 
+.routeLink:active::after {
+  background-color: white;
+}
+
 .routeLink:hover::after {
   width: 100%;
 }
