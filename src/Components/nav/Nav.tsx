@@ -21,7 +21,7 @@ const Nav = ({ onToggleNav }: NavProps) => {
 
   return (
     <nav className="nav">
-      <h1 className="navTitle">GSA (website in progress)</h1>
+      <h1 className="navTitle">GSA</h1>
       <div className="navItems">
         <Link className="routeLink" to={ROUTES.HOME} onClick={playNavSound}>
           <div className="navItem">
