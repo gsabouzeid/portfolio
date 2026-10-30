@@ -16,6 +16,10 @@ footer {
   color: white;
 }
 
+.footerLinkIcon:hover {
+  color: #2495c2;
+}
+
 @media (max-width: 768px) {
   footer {
     flex-direction: column;

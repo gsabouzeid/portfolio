@@ -1,5 +1,6 @@
 import { EnvelopeFill, Github, Linkedin } from "react-bootstrap-icons";
 import { useTranslation } from "react-i18next";
+import { playNavSound } from "../utils/utils";
 import "./styles.css";
 
 const LINKEDIN_LINK = "https://linkedin.com/in/garrett-a-2040a9191";
@@ -18,6 +19,7 @@ const Footer = () => {
           className="footerLinkIcon"
           href={`mailto:${EMAIL}`}
           aria-label={t("footer.emailScreenReader")}
+          onClick={playNavSound}
         >
           <EnvelopeFill />
         </a>
@@ -27,6 +29,7 @@ const Footer = () => {
           target="_blank"
           rel="noreferrer"
           aria-label={t("footer.githubScreenReader")}
+          onClick={playNavSound}
         >
           <Github />
         </a>
@@ -36,6 +39,7 @@ const Footer = () => {
           target="_blank"
           rel="noreferrer"
           aria-label={t("footer.linkedinScreenReader")}
+          onClick={playNavSound}
         >
           <Linkedin />
         </a>

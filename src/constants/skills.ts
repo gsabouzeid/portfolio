@@ -91,14 +91,14 @@ export const SKILLS: Skills = {
     {
       name: "Snyk",
       image: {
-        src: datadogIcon,
+        src: snykIcon,
         altText: t("skills.logoText.snyk"),
       },
     },
     {
       name: "Datadog",
       image: {
-        src: snykIcon,
+        src: datadogIcon,
         altText: t("skills.logoText.datadog"),
       },
     },

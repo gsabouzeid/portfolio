@@ -9,7 +9,6 @@ import Footer from "./Components/footer/Footer";
 import Home from "./Components/home/Home";
 import MobileNav from "./Components/mobileNav/MobileNav";
 import Nav from "./Components/nav/Nav";
-import Projects from "./Components/projects/Projects";
 import Skills from "./Components/skills/Skills";
 import { ROUTES } from "./constants";
 
@@ -58,7 +57,6 @@ function App() {
           <Routes>
             <Route path={ROUTES.HOME} element={<Home />} />
             <Route path={ROUTES.ABOUT} element={<About />} />
-            <Route path={ROUTES.PROJECTS} element={<Projects />} />
             <Route path={ROUTES.SKILLS} element={<Skills />} />
           </Routes>
         </section>

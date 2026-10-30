@@ -23,12 +23,12 @@
   align-items: center;
 }
 
-.navItems a {
+.routeLink {
   text-decoration: none;
   color: white;
 }
 
-.navItems a::after {
+.routeLink::after {
   content: "";
   display: block;
   width: 0;
@@ -38,7 +38,7 @@
   transition: all 0.3s ease-out 0s;
 }
 
-.navItems a:hover::after {
+.routeLink:hover::after {
   width: 100%;
 }
 
@@ -68,4 +68,23 @@
     outline: inherit;
     color: white;
   }
+}
+
+.resumeLink {
+  position: relative;
+  margin-bottom: 5px;
+  padding: 10px;
+  border: 2px solid #2495c2;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #2495c2;
+}
+
+.resumeLink:hover {
+  color: #30c4ff;
+  border-color: #30c4ff;
+}
+
+.resumeLink:active {
+  top: 3px;
 }
