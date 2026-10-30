@@ -17,11 +17,11 @@ footer {
 }
 
 .footerLinkIcon:hover {
-  color: #2495c2;
+  color: #2fc4ff;
 }
 
 .footerLinkIcon:active {
-  color: #2fc4ff;
+  color: #82dcff;
 }
 
 @media (max-width: 768px) {

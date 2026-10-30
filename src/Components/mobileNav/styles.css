@@ -22,7 +22,11 @@
 }
 
 .popoverNavItems > a:hover {
-  background-color: #2495c2;
+  background-color: #175d79;
+}
+
+.popoverNavItems > a:active {
+  background-color: #1d789c;
 }
 
 .popoverNavItem {
