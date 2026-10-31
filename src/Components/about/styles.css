@@ -24,7 +24,8 @@
   padding: 40px;
 }
 
-.aboutContainer > p {
+.aboutContainer > p,
+ul {
   font-size: 20px;
 }
 
