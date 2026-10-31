@@ -1,18 +1,8 @@
 .aboutPage {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 50px;
   align-items: center;
   justify-items: center;
-}
-
-@media (max-width: 768px) {
-  .aboutPage {
-    grid-template-columns: auto;
-  }
-  .boulderingText {
-    order: 1;
-  }
 }
 
 .coloredText {
@@ -34,11 +24,37 @@ ul {
   text-align: center;
 }
 
+.aboutImage {
+  width: 500px;
+  height: 500px;
+}
+
 .aboutImage,
 .boulderingImage {
-  border-radius: 50px;
+  border-radius: 25px;
   max-width: 100%;
   height: auto;
   display: block;
   box-shadow: 10px 10px 5px black;
+}
+
+@media (max-width: 768px) {
+  .aboutPage {
+    grid-template-columns: auto;
+  }
+  .boulderingText {
+    order: 1;
+  }
+  .aboutContainer > p,
+  ul {
+    font-size: 15px;
+  }
+  .aboutHeading {
+    font-size: 30px;
+  }
+  .aboutImage,
+  .boulderingImage {
+    width: 75%;
+    place-self: center;
+  }
 }

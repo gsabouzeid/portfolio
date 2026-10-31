@@ -6,13 +6,7 @@ const About = () => {
   return (
     <div className="aboutPage">
       <div className="aboutItem" data-aos="fade-right">
-        <img
-          src={aboutImage}
-          width={500}
-          height={500}
-          alt="Picture of Garrett"
-          className="aboutImage"
-        />
+        <img src={aboutImage} alt="Picture of Garrett" className="aboutImage" />
       </div>
       <div className="aboutContainer" data-aos="fade-left">
         <h2 className="aboutHeading">
