@@ -23,7 +23,7 @@ const Nav = ({ onToggleNav }: NavProps) => {
     <nav className="nav">
       <img
         src={`${import.meta.env.BASE_URL}/nav-logo.png`}
-        alt="Home Page Logo"
+        alt={t("nav.logoAltText")}
         width="50px"
         height="50px"
       />
@@ -54,7 +54,7 @@ const Nav = ({ onToggleNav }: NavProps) => {
         >
           <div className="navItem">
             <LinkIcon />
-            Resume
+            {t("nav.resume")}
           </div>
         </a>
       </div>

@@ -1,12 +1,13 @@
+import { useTranslation } from "react-i18next";
 import "./styles.css";
 
 const Home = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="homePageClass">
-      <h1 className="header">Garrett Abou&#8209;Zeid</h1>
-      <p className="subTitle">
-        Software Engineer | Problem Solver | Lifelong Learner
-      </p>
+      <h1 className="header">{t("home.title")}</h1>
+      <p className="subTitle">{t("home.subTitle")}</p>
     </div>
   );
 };

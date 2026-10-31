@@ -52,7 +52,7 @@ const MobileNav = ({ toggleNav, onDismissToggle }: MobileNavProps) => {
         >
           <div className="popoverNavItem">
             <LinkIcon />
-            Resume
+            {t("nav.resume")}
           </div>
         </a>
       </div>

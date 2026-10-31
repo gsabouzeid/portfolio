@@ -1,76 +1,92 @@
+import { Trans, useTranslation } from "react-i18next";
 import aboutImage from "../../assets/about.jpeg";
 import boulderingImage from "../../assets/bouldering.jpg";
 import "./styles.css";
 
 const About = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="aboutPage">
       <div className="aboutItem" data-aos="fade-right">
-        <img src={aboutImage} alt="Picture of Garrett" className="aboutImage" />
+        <img
+          src={aboutImage}
+          alt={t("about.picture1Alt")}
+          className="aboutImage"
+        />
       </div>
       <div className="aboutContainer" data-aos="fade-left">
         <h2 className="aboutHeading">
-          Who am <span className="coloredText">I</span>?
+          <Trans
+            i18nKey="about.section1Title"
+            components={[<></>, <span className="coloredText" />]}
+          />
         </h2>
         <p>
-          My name is <span className="coloredText">Garrett Abou-Zeid</span>, I
-          am from the greater Twin Cities area in Minnesota. I grew interest in
-          software development when I watched my mom develop mobile apps. I took
-          my first programming class my senior year of high school and was
-          instantly hooked.
+          <Trans
+            i18nKey="about.section1Description1"
+            components={[<></>, <span className="coloredText" />]}
+          />
         </p>
         <p>
-          I graduated from the{" "}
-          <span className="coloredText">
-            University of Minnesota Twin Cities
-          </span>{" "}
-          in Spring 2023 with a Bachelor of Science degree in{" "}
-          <span className="coloredText">Computer Science</span>. I have been
-          working professionally as a{" "}
-          <span className="coloredText">Frontend Engineer</span> and have
-          developed proficient skills in:
+          <Trans
+            i18nKey="about.section1Description2"
+            components={[
+              <></>,
+              <span className="coloredText" />,
+              <span className="coloredText" />,
+              <span className="coloredText" />,
+            ]}
+          />
         </p>
         <ul className="coloredText">
-          <li>React.js</li>
-          <li>JavaScript</li>
-          <li>CSS</li>
+          <li>{t("about.skill1")}</li>
+          <li>{t("about.skill2")}</li>
+          <li>{t("about.skill3")}</li>
         </ul>
-        <p>As well as developed expertise in:</p>
+        <p>{t("about.expertiseIn")}</p>
         <ul className="coloredText">
-          <li>Responsive Web Design</li>
-          <li>User Interface Design</li>
-          <li>User Experience</li>
+          <li>{t("about.skill4")}</li>
+          <li>{t("about.skill5")}</li>
+          <li>{t("about.skill6")}</li>
         </ul>
       </div>
       <div className="aboutContainer boulderingText" data-aos="fade-right">
-        <h2 className="aboutHeading">In my freetime...</h2>
+        <h2 className="aboutHeading">{t("about.section2Title")}</h2>
         <p>
-          My main form of physical activity is{" "}
-          <span className="coloredText">bouldering</span>:
+          <Trans
+            i18nKey="about.section2Description1"
+            components={[<></>, <span className="coloredText" />]}
+          />
         </p>
         <ul>
-          <li>Climb in the V4 to V6 range</li>
-          <li>Participated in a community climbing competition</li>
+          <li>{t("about.section2Description1Subitem1")}</li>
+          <li>{t("about.section2Description1Subitem2")}</li>
         </ul>
         <p>
-          Team up with my friends in a{" "}
-          <span className="coloredText">bowling</span> league:
+          <Trans
+            i18nKey="about.section2Description2"
+            components={[<></>, <span className="coloredText" />]}
+          />
         </p>
         <ul>
-          <li>High game of 276 pins bowled (7 strikes in a row)</li>
+          <li>{t("about.section2Description2Subitem1")}</li>
         </ul>
         <p>
-          Participate in <span className="coloredText">endurance events</span>:
+          <Trans
+            i18nKey="about.section2Description3"
+            components={[<></>, <span className="coloredText" />]}
+          />
         </p>
         <ul>
-          <li>Tough Mudder 15k</li>
-          <li>Sprint Triathlon</li>
+          <li>{t("about.section2Description3Subitem1")}</li>
+          <li>{t("about.section2Description3Subitem2")}</li>
         </ul>
       </div>
       <div className="aboutItem" data-aos="fade-left">
         <img
           src={boulderingImage}
-          alt="Picture of Garrett Climbing"
+          alt={t("about.picture2Alt")}
           className="boulderingImage"
         />
       </div>

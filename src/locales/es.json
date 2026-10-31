@@ -1,15 +1,67 @@
 {
   "nav": {
-    "home": "Inicio",
-    "about": "Sobre mí",
+    "home": "Hogar",
+    "about": "Acerca de",
     "skills": "Habilidades",
-    "toggleNav": "Alternar navegación"
+    "resume": "Reanudar",
+    "toggleNav": "Alternar navegación",
+    "logoAltText": "Logotipo de la página de inicio"
   },
   "footer": {
     "createdAndMaintained": "Creado y mantenido por Garrett Abou-Zeid",
-    "copyrightNotice": "© Garrett Abou-Zeid. Todos los derechos reservados.",
-    "emailScreenReader": "Enviarme un correo electrónico",
-    "githubScreenReader": "Visitar mi página de GitHub",
-    "linkedinScreenReader": "Visitar mi página de LinkedIn"
+    "copyrightNotice": "© Garrett Abou-Zeid. Reservados todos los derechos.",
+    "emailScreenReader": "Envíame un correo electrónico",
+    "githubScreenReader": "Visita mi página de Github",
+    "linkedinScreenReader": "Visita mi página de LinkedIn"
+  },
+  "home": {
+    "title": "Garrett Abou\u2011Zeid",
+    "subTitle": "Ingeniero de software | Solucionador de problemas | Aprendiz permanente"
+  },
+  "about": {
+    "picture1Alt": "Foto de Garrett",
+    "section1Title": "¿Quién soy <1>yo</1>?",
+    "section1Description1": "Mi nombre es <1>Garrett Abou-Zeid</1>, soy del área metropolitana de Twin Cities en Minnesota. Mi interés en el desarrollo de software aumentó cuando vi a mi madre desarrollar aplicaciones móviles. Tomé mi primera clase de programación en mi último año de secundaria y quedé enganchado al instante.",
+    "section1Description2": "Me gradué de la <1>Universidad de Minnesota Twin Cities</1> en la primavera de 2023 con una licenciatura en <2>Ciencias de la Computación</2>. He trabajado profesionalmente como <3>Ingeniero Frontend</3> y he desarrollado habilidades competentes en:",
+    "skill1": "React.js",
+    "skill2": "JavaScript",
+    "skill3": "CSS",
+    "expertiseIn": "Además de experiencia desarrollada en:",
+    "skill4": "Diseño web responsivo",
+    "skill5": "Diseño de interfaz de usuario",
+    "skill6": "Experiencia de usuario",
+    "section2Title": "En mi tiempo libre...",
+    "section2Description1": "Mi principal forma de actividad física es el <1>búlder</1>:",
+    "section2Description1Subitem1": "Sube en el rango V4 a V6",
+    "section2Description1Subitem2": "Participó en una competencia de escalada comunitaria.",
+    "section2Description2": "Forma equipo con mis amigos en una liga de <1>bolos</1>:",
+    "section2Description2Subitem1": "Juego alto de 276 bolos lanzados (7 golpes seguidos)",
+    "section2Description3": "Participa en <1>eventos de resistencia</2>:",
+    "section2Description3Subitem1": "Tough Mudder 15k",
+    "section2Description3Subitem2": "Triatlón Sprint",
+    "picture2Alt": "Imagen de Garrett escalando"
+  },
+  "skills": {
+    "languages": "Idiomas",
+    "frameworks": "Marcos",
+    "tools": "Herramientas",
+    "misc": "Varios.",
+    "logoText": {
+      "js": "Logotipo de JavaScript",
+      "ts": "Logotipo de TypeScript",
+      "html": "Logotipo de HTML",
+      "css": "Logotipo de CSS",
+      "python": "Logotipo de Python",
+      "react": "Logotipo de React.js",
+      "jest": "Logotipo de Jest",
+      "git": "Logotipo de Git",
+      "aws": "Logotipo de AWS",
+      "snyk": "Logotipo de Snyk",
+      "datadog": "Logotipo de DataDog",
+      "selenium": "Logotipo de Selenium",
+      "cypress": "Logotipo de Cypress",
+      "playwright": "Logotipo de PlayWright",
+      "kiro": "Logotipo de Kiro"
+    }
   }
 }
