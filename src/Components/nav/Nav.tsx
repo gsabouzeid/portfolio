@@ -21,7 +21,12 @@ const Nav = ({ onToggleNav }: NavProps) => {
 
   return (
     <nav className="nav">
-      <h1 className="navTitle">GSA</h1>
+      <img
+        src={`${import.meta.env.BASE_URL}/nav-logo.png`}
+        alt="Home Page Logo"
+        width="50px"
+        height="50px"
+      />
       <div className="navItems">
         <Link className="routeLink" to={ROUTES.HOME} onClick={playNavSound}>
           <div className="navItem">
