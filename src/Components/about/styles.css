@@ -52,9 +52,7 @@ ul {
   .aboutHeading {
     font-size: 30px;
   }
-  .aboutImage,
-  .boulderingImage {
+  .aboutItem {
     width: 75%;
-    place-self: center;
   }
 }
