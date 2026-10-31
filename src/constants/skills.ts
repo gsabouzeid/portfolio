@@ -1,4 +1,3 @@
-import { t } from "i18next";
 import awsIcon from "../assets/aws-icon.svg";
 import cssIcon from "../assets/css3-icon.svg";
 import cypressIcon from "../assets/cypress-icon.svg";
@@ -15,6 +14,7 @@ import saucelabsIcon from "../assets/saucelabs-icon.svg";
 import seleniumIcon from "../assets/selenium-icon.svg";
 import snykIcon from "../assets/snyk-icon.svg";
 import tsIcon from "../assets/ts-icon.svg";
+import i18n from "../i18n.ts";
 
 export interface Image {
   src: string;
@@ -39,35 +39,35 @@ export const SKILLS: Skills = {
       name: "JavaScript",
       image: {
         src: jsIcon,
-        altText: t("skills.logoText.js"),
+        altText: i18n.t("skills.logoText.js"),
       },
     },
     {
       name: "TypeScript",
       image: {
         src: tsIcon,
-        altText: t("skills.logoText.ts"),
+        altText: i18n.t("skills.logoText.ts"),
       },
     },
     {
       name: "HTML5",
       image: {
         src: html5Icon,
-        altText: t("skills.logoText.html"),
+        altText: i18n.t("skills.logoText.html"),
       },
     },
     {
       name: "CSS3",
       image: {
         src: cssIcon,
-        altText: t("skills.logoText.css"),
+        altText: i18n.t("skills.logoText.css"),
       },
     },
     {
       name: "Python",
       image: {
         src: pythonIcon,
-        altText: t("skills.logoText.python"),
+        altText: i18n.t("skills.logoText.python"),
       },
     },
   ],
@@ -76,14 +76,14 @@ export const SKILLS: Skills = {
       name: "React.js",
       image: {
         src: reactIcon,
-        altText: t("skills.logoText.react"),
+        altText: i18n.t("skills.logoText.react"),
       },
     },
     {
       name: "Jest",
       image: {
         src: jestIcon,
-        altText: t("skills.logoText.jest"),
+        altText: i18n.t("skills.logoText.jest"),
       },
     },
   ],
@@ -92,49 +92,49 @@ export const SKILLS: Skills = {
       name: "Snyk",
       image: {
         src: snykIcon,
-        altText: t("skills.logoText.snyk"),
+        altText: i18n.t("skills.logoText.snyk"),
       },
     },
     {
       name: "Datadog",
       image: {
         src: datadogIcon,
-        altText: t("skills.logoText.datadog"),
+        altText: i18n.t("skills.logoText.datadog"),
       },
     },
     {
       name: "Selenium",
       image: {
         src: seleniumIcon,
-        altText: t("skills.logoText.selenium"),
+        altText: i18n.t("skills.logoText.selenium"),
       },
     },
     {
       name: "Playwright",
       image: {
         src: playwrightIcon,
-        altText: t("skills.logoText.playwright"),
+        altText: i18n.t("skills.logoText.playwright"),
       },
     },
     {
       name: "Cypress",
       image: {
         src: cypressIcon,
-        altText: t("skills.logoText.cypress"),
+        altText: i18n.t("skills.logoText.cypress"),
       },
     },
     {
       name: "Sauce Labs",
       image: {
         src: saucelabsIcon,
-        altText: t("skills.logoText.saucelabs"),
+        altText: i18n.t("skills.logoText.saucelabs"),
       },
     },
     {
       name: "Kiro IDE",
       image: {
         src: kiroIcon,
-        altText: t("skills.logoText.kiro"),
+        altText: i18n.t("skills.logoText.kiro"),
       },
     },
   ],
@@ -143,14 +143,14 @@ export const SKILLS: Skills = {
       name: "Git",
       image: {
         src: gitIcon,
-        altText: t("skills.logoText.git"),
+        altText: i18n.t("skills.logoText.git"),
       },
     },
     {
       name: "AWS",
       image: {
         src: awsIcon,
-        altText: t("skills.logoText.aws"),
+        altText: i18n.t("skills.logoText.aws"),
       },
     },
   ],
