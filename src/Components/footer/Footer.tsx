@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { playNavSound } from "../utils/utils";
 import "./styles.css";
 
-const LINKEDIN_LINK = "https://linkedin.com/in/garrett-a-2040a9191";
+const LINKEDIN_LINK = "https://www.linkedin.com/in/garrett-abouzeid/";
 const GITHUB_LINK = "https://github.com/gsabouzeid";
 const EMAIL = "gsabouzeid@gmail.com";
 
