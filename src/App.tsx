@@ -15,12 +15,18 @@ import { ROUTES } from "./constants";
 function App() {
   const [toggleNav, setToggleNav] = useState(false);
 
-  useEffect(() => {
+  function initAOS() {
     AOS.init({
       duration: 1000,
       once: true,
     });
-  }, []);
+  }
+
+  if (document.readyState === "complete") {
+    initAOS();
+  } else {
+    window.addEventListener("load", initAOS);
+  }
 
   // Close mobile nav if screen size expands
   useEffect(() => {
