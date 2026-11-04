@@ -43,9 +43,9 @@
   },
   "skills": {
     "languages": "Languages",
-    "frameworks": "Frameworks",
-    "tools": "Tools",
-    "misc": "Misc.",
+    "librariesAndFrameworks": "Libraries & Frameworks",
+    "testingAndQa": "Testing & QA",
+    "tools": "Developer Tools & Infrastructure",
     "logoText": {
       "js": "JavaScript Logo",
       "ts": "TypeScript Logo",
@@ -61,7 +61,8 @@
       "selenium": "Selenium Logo",
       "cypress": "Cypress Logo",
       "playwright": "Playwright Logo",
-      "kiro": "Kiro Logo"
+      "kiro": "Kiro Logo",
+      "nextJs": "Next.js Logo"
     }
   }
 }

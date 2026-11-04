@@ -8,8 +8,8 @@ const Skills = () => {
 
   SKILLS.languages.sort((a, b) => a.name.localeCompare(b.name));
   SKILLS.frameworks.sort((a, b) => a.name.localeCompare(b.name));
+  SKILLS.testing.sort((a, b) => a.name.localeCompare(b.name));
   SKILLS.tools.sort((a, b) => a.name.localeCompare(b.name));
-  SKILLS.misc.sort((a, b) => a.name.localeCompare(b.name));
 
   return (
     <div className="skillsContainer">
@@ -28,7 +28,7 @@ const Skills = () => {
         className="categoryContainer"
         style={{ "--i": 1 } as React.CSSProperties}
       >
-        <h2 className="skillHeading">{t("skills.frameworks")}</h2>
+        <h2 className="skillHeading">{t("skills.librariesAndFrameworks")}</h2>
         <div className="skillPillContainer">
           {SKILLS.frameworks.map((fw) => (
             <SkillPill key={fw.name} skill={fw} />
@@ -39,10 +39,10 @@ const Skills = () => {
         className="categoryContainer"
         style={{ "--i": 2 } as React.CSSProperties}
       >
-        <h2 className="skillHeading">{t("skills.tools")}</h2>
+        <h2 className="skillHeading">{t("skills.testingAndQa")}</h2>
         <div className="skillPillContainer">
-          {SKILLS.tools.map((tool) => (
-            <SkillPill key={tool.name} skill={tool} />
+          {SKILLS.testing.map((fw) => (
+            <SkillPill key={fw.name} skill={fw} />
           ))}
         </div>
       </div>
@@ -50,10 +50,10 @@ const Skills = () => {
         className="categoryContainer"
         style={{ "--i": 3 } as React.CSSProperties}
       >
-        <h2 className="skillHeading">{t("skills.misc")}</h2>
+        <h2 className="skillHeading">{t("skills.tools")}</h2>
         <div className="skillPillContainer">
-          {SKILLS.misc.map((m) => (
-            <SkillPill key={m.name} skill={m} />
+          {SKILLS.tools.map((tool) => (
+            <SkillPill key={tool.name} skill={tool} />
           ))}
         </div>
       </div>

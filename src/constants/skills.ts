@@ -7,6 +7,7 @@ import html5Icon from "../assets/html5-icon.svg";
 import jestIcon from "../assets/jest-icon.svg";
 import jsIcon from "../assets/js-icon.svg";
 import kiroIcon from "../assets/kiro-icon.svg";
+import nextJsIcon from "../assets/nextjs-icon.svg";
 import playwrightIcon from "../assets/playwright-icon.svg";
 import pythonIcon from "../assets/python-icon.svg";
 import reactIcon from "../assets/react-icon.svg";
@@ -29,8 +30,8 @@ export interface Skill {
 interface Skills {
   languages: Skill[];
   frameworks: Skill[];
+  testing: Skill[];
   tools: Skill[];
-  misc: Skill[];
 }
 
 export const SKILLS: Skills = {
@@ -80,26 +81,19 @@ export const SKILLS: Skills = {
       },
     },
     {
+      name: "Next.js",
+      image: {
+        src: nextJsIcon,
+        altText: i18n.t("skills.logoText.nextJs"),
+      },
+    },
+  ],
+  testing: [
+    {
       name: "Jest",
       image: {
         src: jestIcon,
         altText: i18n.t("skills.logoText.jest"),
-      },
-    },
-  ],
-  tools: [
-    {
-      name: "Snyk",
-      image: {
-        src: snykIcon,
-        altText: i18n.t("skills.logoText.snyk"),
-      },
-    },
-    {
-      name: "Datadog",
-      image: {
-        src: datadogIcon,
-        altText: i18n.t("skills.logoText.datadog"),
       },
     },
     {
@@ -130,6 +124,23 @@ export const SKILLS: Skills = {
         altText: i18n.t("skills.logoText.saucelabs"),
       },
     },
+  ],
+  tools: [
+    {
+      name: "Snyk",
+      image: {
+        src: snykIcon,
+        altText: i18n.t("skills.logoText.snyk"),
+      },
+    },
+    {
+      name: "Datadog",
+      image: {
+        src: datadogIcon,
+        altText: i18n.t("skills.logoText.datadog"),
+      },
+    },
+
     {
       name: "Kiro IDE",
       image: {
@@ -137,8 +148,6 @@ export const SKILLS: Skills = {
         altText: i18n.t("skills.logoText.kiro"),
       },
     },
-  ],
-  misc: [
     {
       name: "Git",
       image: {

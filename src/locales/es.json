@@ -43,9 +43,9 @@
   },
   "skills": {
     "languages": "Idiomas",
-    "frameworks": "Marcos",
-    "tools": "Herramientas",
-    "misc": "Varios.",
+    "librariesAndFrameworks": "Bibliotecas y frameworks",
+    "testingAndQa": "Pruebas y control de calidad",
+    "tools": "Herramientas e infraestructura para desarrolladores",
     "logoText": {
       "js": "Logotipo de JavaScript",
       "ts": "Logotipo de TypeScript",
@@ -61,7 +61,8 @@
       "selenium": "Logotipo de Selenium",
       "cypress": "Logotipo de Cypress",
       "playwright": "Logotipo de PlayWright",
-      "kiro": "Logotipo de Kiro"
+      "kiro": "Logotipo de Kiro",
+      "nextJs": "Logotipo de Next.js"
     }
   }
 }
