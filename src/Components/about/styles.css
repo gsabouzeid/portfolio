@@ -36,6 +36,13 @@ ul {
   height: auto;
   display: block;
   box-shadow: 10px 10px 5px black;
+
+  transition: transform 0.3s ease-in-out;
+}
+
+.aboutImage:hover,
+.boulderingImage:hover {
+  transform: scale(1.05);
 }
 
 @media (max-width: 768px) {

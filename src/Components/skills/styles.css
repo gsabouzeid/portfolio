@@ -46,4 +46,10 @@ h2 {
   padding: 0 20px;
   border-radius: 20px;
   color: #000000;
+
+  transition: transform 0.3s ease-in-out;
+}
+
+.skillPill:hover {
+  transform: scale(1.1);
 }
