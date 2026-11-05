@@ -1,7 +1,6 @@
 import { EnvelopeFill, Github, Linkedin } from "react-bootstrap-icons";
 import { useTranslation } from "react-i18next";
 import { playNavSound } from "../utils/utils";
-import "./styles.css";
 
 const LINKEDIN_LINK = "https://www.linkedin.com/in/garrett-abouzeid/";
 const GITHUB_LINK = "https://github.com/gsabouzeid";
@@ -11,12 +10,12 @@ const Footer = () => {
   const { t } = useTranslation();
 
   return (
-    <footer>
+    <footer className="flex flex-col items-center justify-between gap-3 bg-black/75 p-5 md:flex-row md:gap-6.25">
       <p>{t("footer.createdAndMaintained")}</p>
       <p>{t("footer.copyrightNotice")}</p>
-      <div className="footerIcons">
+      <div className="flex gap-6.25 md:m-0">
         <a
-          className="footerLinkIcon"
+          className="text-white hover:text-sky-400 active:text-sky-300"
           href={`mailto:${EMAIL}`}
           aria-label={t("footer.emailScreenReader")}
           onClick={playNavSound}
@@ -24,7 +23,7 @@ const Footer = () => {
           <EnvelopeFill />
         </a>
         <a
-          className="footerLinkIcon"
+          className="text-white hover:text-sky-400 active:text-sky-300"
           href={GITHUB_LINK}
           target="_blank"
           rel="noreferrer"
@@ -34,7 +33,7 @@ const Footer = () => {
           <Github />
         </a>
         <a
-          className="footerLinkIcon"
+          className="text-white hover:text-sky-400 active:text-sky-300"
           href={LINKEDIN_LINK}
           target="_blank"
           rel="noreferrer"
