@@ -1,5 +1,4 @@
 import type { Skill } from "../../constants";
-import "./styles.css";
 
 interface SkillProps {
   skill: Skill;

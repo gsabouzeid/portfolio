@@ -1,7 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { SKILLS } from "../../constants";
 import SkillPill from "./SkillPill";
-import "./styles.css";
 
 const Skills = () => {
   const { t } = useTranslation();
