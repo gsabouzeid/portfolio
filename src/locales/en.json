@@ -62,7 +62,8 @@
       "cypress": "Cypress Logo",
       "playwright": "Playwright Logo",
       "kiro": "Kiro Logo",
-      "nextJs": "Next.js Logo"
+      "nextJs": "Next.js Logo",
+      "tailwind": "Tailwind CSS Logo"
     }
   }
 }

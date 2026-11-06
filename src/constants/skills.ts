@@ -14,6 +14,7 @@ import reactIcon from "../assets/react-icon.svg";
 import saucelabsIcon from "../assets/saucelabs-icon.svg";
 import seleniumIcon from "../assets/selenium-icon.svg";
 import snykIcon from "../assets/snyk-icon.svg";
+import tailwindIcon from "../assets/tailwind-icon.svg";
 import tsIcon from "../assets/ts-icon.svg";
 import i18n from "../i18n.ts";
 
@@ -85,6 +86,13 @@ export const SKILLS: Skills = {
       image: {
         src: nextJsIcon,
         altText: i18n.t("skills.logoText.nextJs"),
+      },
+    },
+    {
+      name: "Tailwind CSS",
+      image: {
+        src: tailwindIcon,
+        altText: i18n.t("skills.logoText.tailwind"),
       },
     },
   ],
