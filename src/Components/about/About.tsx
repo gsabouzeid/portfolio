@@ -18,19 +18,19 @@ const About = () => {
         className="p-10 text-[15px] md:[&>p]:text-[20px]"
         data-aos="fade-left"
       >
-        <h2 className="text-center text-[30px] md:text-[40px]">
+        <h2 className="pb-4 text-center text-[30px] font-bold md:text-[40px]">
           <Trans
             i18nKey="about.section1Title"
             components={[<></>, <span className="text-sky-400" />]}
           />
         </h2>
-        <p>
+        <p className="mb-4">
           <Trans
             i18nKey="about.section1Description1"
             components={[<></>, <span className="text-sky-400" />]}
           />
         </p>
-        <p>
+        <p className="mb-4">
           <Trans
             i18nKey="about.section1Description2"
             components={[
@@ -41,13 +41,13 @@ const About = () => {
             ]}
           />
         </p>
-        <ul className="text-[15px] text-sky-400 md:text-[20px]">
+        <ul className="mb-4 ml-4 list-disc pl-5 text-[15px] text-sky-400 md:text-[20px]">
           <li>{t("about.skill1")}</li>
           <li>{t("about.skill2")}</li>
           <li>{t("about.skill3")}</li>
         </ul>
-        <p>{t("about.expertiseIn")}</p>
-        <ul className="text-[15px] text-sky-400 md:text-[20px]">
+        <p className="mb-4">{t("about.expertiseIn")}</p>
+        <ul className="ml-4 list-disc pl-5 text-[15px] text-sky-400 md:text-[20px]">
           <li>{t("about.skill4")}</li>
           <li>{t("about.skill5")}</li>
           <li>{t("about.skill6")}</li>
@@ -57,35 +57,35 @@ const About = () => {
         className="order-1 p-10 text-[15px] md:order-0 md:[&>p]:text-[20px]"
         data-aos="fade-right"
       >
-        <h2 className="text-center text-[30px] md:text-[40px]">
+        <h2 className="pb-4 text-center text-[30px] font-bold md:text-[40px]">
           {t("about.section2Title")}
         </h2>
-        <p>
+        <p className="mb-4">
           <Trans
             i18nKey="about.section2Description1"
             components={[<></>, <span className="text-sky-400" />]}
           />
         </p>
-        <ul className="text-[15px] md:text-[20px]">
+        <ul className="mb-4 ml-4 list-disc pl-5 text-[15px] md:text-[20px]">
           <li>{t("about.section2Description1Subitem1")}</li>
           <li>{t("about.section2Description1Subitem2")}</li>
         </ul>
-        <p>
+        <p className="mb-4">
           <Trans
             i18nKey="about.section2Description2"
             components={[<></>, <span className="text-sky-400" />]}
           />
         </p>
-        <ul className="text-[15px] md:text-[20px]">
+        <ul className="mb-4 ml-4 list-disc pl-5 text-[15px] md:text-[20px]">
           <li>{t("about.section2Description2Subitem1")}</li>
         </ul>
-        <p>
+        <p className="mb-4">
           <Trans
             i18nKey="about.section2Description3"
             components={[<></>, <span className="text-sky-400" />]}
           />
         </p>
-        <ul className="text-[15px] md:text-[20px]">
+        <ul className="ml-4 list-disc pl-5 text-[15px] md:text-[20px]">
           <li>{t("about.section2Description3Subitem1")}</li>
           <li>{t("about.section2Description3Subitem2")}</li>
         </ul>
