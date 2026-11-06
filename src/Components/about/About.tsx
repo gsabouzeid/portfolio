@@ -6,8 +6,8 @@ const About = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="aboutPage grid grid-cols-[auto] items-center justify-items-center md:grid-cols-2">
-      <div className="w-[75%]" data-aos="fade-right">
+    <div className="grid grid-cols-[auto] place-items-center justify-items-center md:grid-cols-2">
+      <div className="w-[75%] md:w-auto" data-aos="fade-right">
         <img
           src={aboutImage}
           alt={t("about.picture1Alt")}
@@ -90,11 +90,11 @@ const About = () => {
           <li>{t("about.section2Description3Subitem2")}</li>
         </ul>
       </div>
-      <div className="w-[75%]" data-aos="fade-left">
+      <div className="w-[75%] md:w-auto" data-aos="fade-left">
         <img
           src={boulderingImage}
           alt={t("about.picture2Alt")}
-          className="h-auto w-125 rounded-[25px] shadow-[10px_10px_5px_black] transition-transform duration-300 ease-in-out hover:scale-105"
+          className="h-auto rounded-[25px] shadow-[10px_10px_5px_black] transition-transform duration-300 ease-in-out hover:scale-105"
         />
       </div>
     </div>
