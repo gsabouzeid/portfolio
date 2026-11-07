@@ -62,7 +62,8 @@
       "cypress": "Logotipo de Cypress",
       "playwright": "Logotipo de PlayWright",
       "kiro": "Logotipo de Kiro",
-      "nextJs": "Logotipo de Next.js"
+      "nextJs": "Logotipo de Next.js",
+      "tailwind": "Logotipo de Tailwind CSS"
     }
   }
 }

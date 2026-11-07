@@ -10,7 +10,6 @@ import { Link } from "react-router-dom";
 import { ROUTES } from "../../constants";
 import { resumeDownloadUrl } from "../../constants/resume";
 import { playNavSound } from "../utils/utils";
-import "./styles.css";
 
 interface NavProps {
   onToggleNav: () => void;
@@ -20,7 +19,7 @@ const Nav = ({ onToggleNav }: NavProps) => {
   const { t } = useTranslation();
 
   return (
-    <nav className="nav">
+    <nav className="sticky top-0 z-1 flex h-25 items-center justify-between bg-black/75 px-5 text-3xl">
       <Link to={ROUTES.HOME} onClick={playNavSound}>
         <img
           src={`${import.meta.env.BASE_URL}/nav-logo.png`}
@@ -29,39 +28,51 @@ const Nav = ({ onToggleNav }: NavProps) => {
           height="50px"
         />
       </Link>
-      <div className="navItems">
-        <Link className="routeLink" to={ROUTES.HOME} onClick={playNavSound}>
-          <div className="navItem">
+      <div className="hidden items-center gap-12.5 md:flex">
+        <Link
+          className="after:block after:h-1.25 after:w-0 after:rounded-md after:bg-sky-400 after:transition-all after:duration-300 after:ease-out after:content-[''] hover:after:w-full active:after:bg-white"
+          to={ROUTES.HOME}
+          onClick={playNavSound}
+        >
+          <div className="flex items-center gap-2.5">
             <HouseDoor />
             {t("nav.home")}
           </div>
         </Link>
-        <Link className="routeLink" to={ROUTES.ABOUT} onClick={playNavSound}>
-          <div className="navItem">
+        <Link
+          className="after:block after:h-1.25 after:w-0 after:rounded-md after:bg-sky-400 after:transition-all after:duration-300 after:ease-out after:content-[''] hover:after:w-full active:after:bg-white"
+          to={ROUTES.ABOUT}
+          onClick={playNavSound}
+        >
+          <div className="flex items-center gap-2.5">
             <Person />
             {t("nav.about")}
           </div>
         </Link>
-        <Link className="routeLink" to={ROUTES.SKILLS} onClick={playNavSound}>
-          <div className="navItem">
+        <Link
+          className="after:block after:h-1.25 after:w-0 after:rounded-md after:bg-sky-400 after:transition-all after:duration-300 after:ease-out after:content-[''] hover:after:w-full active:after:bg-white"
+          to={ROUTES.SKILLS}
+          onClick={playNavSound}
+        >
+          <div className="flex items-center gap-2.5">
             <Lightbulb />
             {t("nav.skills")}
           </div>
         </Link>
         <a
-          className="resumeLink"
+          className="resumeLink relative mb-1.25 rounded-xl border-2 p-2.5 text-sky-400 hover:text-sky-300 active:top-1"
           href={resumeDownloadUrl}
           download="garrett-abouzeid-resume.pdf"
           onClick={playNavSound}
         >
-          <div className="navItem">
+          <div className="flex items-center gap-2.5">
             <LinkIcon />
             {t("nav.resume")}
           </div>
         </a>
       </div>
       <button
-        className="navItemsButton"
+        className="navItemsButton block cursor-pointer hover:text-sky-400 active:text-sky-300 md:hidden"
         aria-label={t("nav.toggleNav")}
         onClick={() => {
           playNavSound();

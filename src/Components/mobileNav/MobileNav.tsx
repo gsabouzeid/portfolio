@@ -9,7 +9,6 @@ import { Link } from "react-router-dom";
 import { ROUTES } from "../../constants";
 import { resumeDownloadUrl } from "../../constants/resume";
 import { playNavSound } from "../utils/utils";
-import "./styles.css";
 
 interface MobileNavProps {
   toggleNav: boolean;
@@ -25,22 +24,36 @@ const MobileNav = ({ toggleNav, onDismissToggle }: MobileNavProps) => {
   }
 
   return (
-    <nav className={`popoverNav ${!toggleNav ? "is-hidden" : ""}`}>
-      <div className="popoverNavItems">
-        <Link to={ROUTES.HOME} onClick={handleNavClick}>
-          <div className="popoverNavItem">
+    <nav
+      className={`fixed z-1 mt-25 w-full bg-black/75 transition-[visibility,opacity] duration-250 ease-out ${!toggleNav ? "invisible opacity-0" : ""}`}
+    >
+      <div className="flex flex-col">
+        <Link
+          to={ROUTES.HOME}
+          onClick={handleNavClick}
+          className="hover:bg-cyan-800 active:bg-cyan-700"
+        >
+          <div className="flex items-center justify-center gap-2.5 p-2.5">
             <HouseDoor />
             {t("nav.home")}
           </div>
         </Link>
-        <Link to={ROUTES.ABOUT} onClick={handleNavClick}>
-          <div className="popoverNavItem">
+        <Link
+          to={ROUTES.ABOUT}
+          onClick={handleNavClick}
+          className="hover:bg-cyan-800 active:bg-cyan-700"
+        >
+          <div className="flex items-center justify-center gap-2.5 p-2.5">
             <Person />
             {t("nav.about")}
           </div>
         </Link>
-        <Link to={ROUTES.SKILLS} onClick={handleNavClick}>
-          <div className="popoverNavItem">
+        <Link
+          to={ROUTES.SKILLS}
+          onClick={handleNavClick}
+          className="hover:bg-cyan-800 active:bg-cyan-700"
+        >
+          <div className="flex items-center justify-center gap-2.5 p-2.5">
             <Lightbulb />
             {t("nav.skills")}
           </div>
@@ -49,8 +62,9 @@ const MobileNav = ({ toggleNav, onDismissToggle }: MobileNavProps) => {
           href={resumeDownloadUrl}
           download="garrett-abouzeid-resume.pdf"
           onClick={handleNavClick}
+          className="hover:bg-cyan-800 active:bg-cyan-700"
         >
-          <div className="popoverNavItem">
+          <div className="flex items-center justify-center gap-2.5 p-2.5">
             <LinkIcon />
             {t("nav.resume")}
           </div>

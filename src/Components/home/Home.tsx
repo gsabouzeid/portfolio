@@ -1,13 +1,12 @@
 import { useTranslation } from "react-i18next";
-import "./styles.css";
 
 const Home = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="homePageClass">
-      <h1 className="header">{t("home.title")}</h1>
-      <p className="subTitle">{t("home.subTitle")}</p>
+    <div className="flex flex-1 flex-col justify-center text-center">
+      <h1 className="mb-5 text-5xl md:text-7xl">{t("home.title")}</h1>
+      <p className="text-2xl text-sky-400 md:text-3xl">{t("home.subTitle")}</p>
     </div>
   );
 };
