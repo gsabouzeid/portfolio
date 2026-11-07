@@ -7,7 +7,6 @@ import {
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { ROUTES } from "../../constants";
-import { resumeDownloadUrl } from "../../constants/resume";
 import { playNavSound } from "../utils/utils";
 
 interface MobileNavProps {
@@ -59,7 +58,7 @@ const MobileNav = ({ toggleNav, onDismissToggle }: MobileNavProps) => {
           </div>
         </Link>
         <a
-          href={resumeDownloadUrl}
+          href={"./resume.pdf"}
           download="garrett-abouzeid-resume.pdf"
           onClick={handleNavClick}
           className="hover:bg-cyan-800 active:bg-cyan-700"

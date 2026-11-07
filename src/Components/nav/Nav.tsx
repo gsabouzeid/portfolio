@@ -8,7 +8,6 @@ import {
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { ROUTES } from "../../constants";
-import { resumeDownloadUrl } from "../../constants/resume";
 import { playNavSound } from "../utils/utils";
 
 interface NavProps {
@@ -22,7 +21,7 @@ const Nav = ({ onToggleNav }: NavProps) => {
     <nav className="sticky top-0 z-1 flex h-25 items-center justify-between bg-black/75 px-5 text-3xl">
       <Link to={ROUTES.HOME} onClick={playNavSound}>
         <img
-          src={`${import.meta.env.BASE_URL}/nav-logo.png`}
+          src={"/nav-logo.png"}
           alt={t("nav.logoAltText")}
           width="50px"
           height="50px"
@@ -61,7 +60,7 @@ const Nav = ({ onToggleNav }: NavProps) => {
         </Link>
         <a
           className="resumeLink relative mb-1.25 rounded-xl border-2 p-2.5 text-sky-400 hover:text-sky-300 active:top-1"
-          href={resumeDownloadUrl}
+          href={"./resume.pdf"}
           download="garrett-abouzeid-resume.pdf"
           onClick={playNavSound}
         >

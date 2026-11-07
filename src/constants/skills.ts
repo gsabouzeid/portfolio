@@ -1,21 +1,3 @@
-import awsIcon from "../assets/aws-icon.svg";
-import cssIcon from "../assets/css3-icon.svg";
-import cypressIcon from "../assets/cypress-icon.svg";
-import datadogIcon from "../assets/datadog-icon.svg";
-import gitIcon from "../assets/git-icon.svg";
-import html5Icon from "../assets/html5-icon.svg";
-import jestIcon from "../assets/jest-icon.svg";
-import jsIcon from "../assets/js-icon.svg";
-import kiroIcon from "../assets/kiro-icon.svg";
-import nextJsIcon from "../assets/nextjs-icon.svg";
-import playwrightIcon from "../assets/playwright-icon.svg";
-import pythonIcon from "../assets/python-icon.svg";
-import reactIcon from "../assets/react-icon.svg";
-import saucelabsIcon from "../assets/saucelabs-icon.svg";
-import seleniumIcon from "../assets/selenium-icon.svg";
-import snykIcon from "../assets/snyk-icon.svg";
-import tailwindIcon from "../assets/tailwind-icon.svg";
-import tsIcon from "../assets/ts-icon.svg";
 import i18n from "../i18n.ts";
 
 export interface Image {
@@ -40,35 +22,35 @@ export const SKILLS: Skills = {
     {
       name: "JavaScript",
       image: {
-        src: jsIcon,
+        src: "js-icon.svg",
         altText: i18n.t("skills.logoText.js"),
       },
     },
     {
       name: "TypeScript",
       image: {
-        src: tsIcon,
+        src: "ts-icon.svg",
         altText: i18n.t("skills.logoText.ts"),
       },
     },
     {
       name: "HTML5",
       image: {
-        src: html5Icon,
+        src: "html5-icon.svg",
         altText: i18n.t("skills.logoText.html"),
       },
     },
     {
       name: "CSS3",
       image: {
-        src: cssIcon,
+        src: "css3-icon.svg",
         altText: i18n.t("skills.logoText.css"),
       },
     },
     {
       name: "Python",
       image: {
-        src: pythonIcon,
+        src: "python-icon.svg",
         altText: i18n.t("skills.logoText.python"),
       },
     },
@@ -77,21 +59,21 @@ export const SKILLS: Skills = {
     {
       name: "React.js",
       image: {
-        src: reactIcon,
+        src: "react-icon.svg",
         altText: i18n.t("skills.logoText.react"),
       },
     },
     {
       name: "Next.js",
       image: {
-        src: nextJsIcon,
+        src: "nextJs-icon.svg",
         altText: i18n.t("skills.logoText.nextJs"),
       },
     },
     {
       name: "Tailwind CSS",
       image: {
-        src: tailwindIcon,
+        src: "tailwind-icon.svg",
         altText: i18n.t("skills.logoText.tailwind"),
       },
     },
@@ -100,35 +82,35 @@ export const SKILLS: Skills = {
     {
       name: "Jest",
       image: {
-        src: jestIcon,
+        src: "jest-icon.svg",
         altText: i18n.t("skills.logoText.jest"),
       },
     },
     {
       name: "Selenium",
       image: {
-        src: seleniumIcon,
+        src: "selenium-icon.svg",
         altText: i18n.t("skills.logoText.selenium"),
       },
     },
     {
       name: "Playwright",
       image: {
-        src: playwrightIcon,
+        src: "playwright-icon.svg",
         altText: i18n.t("skills.logoText.playwright"),
       },
     },
     {
       name: "Cypress",
       image: {
-        src: cypressIcon,
+        src: "cypress-icon.svg",
         altText: i18n.t("skills.logoText.cypress"),
       },
     },
     {
       name: "Sauce Labs",
       image: {
-        src: saucelabsIcon,
+        src: "saucelabs-icon.svg",
         altText: i18n.t("skills.logoText.saucelabs"),
       },
     },
@@ -137,14 +119,14 @@ export const SKILLS: Skills = {
     {
       name: "Snyk",
       image: {
-        src: snykIcon,
+        src: "snyk-icon.svg",
         altText: i18n.t("skills.logoText.snyk"),
       },
     },
     {
       name: "Datadog",
       image: {
-        src: datadogIcon,
+        src: "/datadog-icon.svg",
         altText: i18n.t("skills.logoText.datadog"),
       },
     },
@@ -152,21 +134,21 @@ export const SKILLS: Skills = {
     {
       name: "Kiro IDE",
       image: {
-        src: kiroIcon,
+        src: "/kiro-icon.svg",
         altText: i18n.t("skills.logoText.kiro"),
       },
     },
     {
       name: "Git",
       image: {
-        src: gitIcon,
+        src: "/git-icon.svg",
         altText: i18n.t("skills.logoText.git"),
       },
     },
     {
       name: "AWS",
       image: {
-        src: awsIcon,
+        src: "/aws-icon.svg",
         altText: i18n.t("skills.logoText.aws"),
       },
     },

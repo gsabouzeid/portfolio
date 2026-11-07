@@ -1,6 +1,4 @@
-// import navClick from "../../assets/nav_click.mp3";
-
 export function playNavSound() {
-  // const audio = new Audio(navClick);
+  // const audio = new Audio("./nav_click.mp3");
   // audio.play();
 }

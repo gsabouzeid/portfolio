@@ -1,6 +1,4 @@
 import { Trans, useTranslation } from "react-i18next";
-import aboutImage from "../../assets/about.jpeg";
-import boulderingImage from "../../assets/bouldering.jpg";
 
 const About = () => {
   const { t } = useTranslation();
@@ -9,7 +7,7 @@ const About = () => {
     <div className="grid grid-cols-[auto] place-items-center justify-items-center md:grid-cols-2">
       <div className="w-[75%] md:w-auto" data-aos="fade-right">
         <img
-          src={aboutImage}
+          src={"./about.jpeg"}
           alt={t("about.picture1Alt")}
           className="h-auto w-125 rounded-[25px] shadow-[10px_10px_5px_black] transition-transform duration-300 ease-in-out hover:scale-105"
         />
@@ -92,7 +90,7 @@ const About = () => {
       </div>
       <div className="w-[75%] md:w-auto" data-aos="fade-left">
         <img
-          src={boulderingImage}
+          src={"./bouldering.jpg"}
           alt={t("about.picture2Alt")}
           className="h-auto rounded-[25px] shadow-[10px_10px_5px_black] transition-transform duration-300 ease-in-out hover:scale-105"
         />
